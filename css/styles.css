@@ -1,14 +1,37 @@
-body {
-    font-family: 'Raleway','Roboto', sans-serif;
-    font-weight: 400;
-}
-
 :root {
     --white: #FFFFFF;
     --blue: #2196F3;
     --black: #000;
     --gray: #757575;
 }
+
+body {
+    font-family: 'Raleway', 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /* Logo*/
 
 .navigation {
@@ -120,6 +143,9 @@ body {
 /*Button portfolio*/
 
 .button {
+    position: absolute;
+    width: 121px;
+    height: 38px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
