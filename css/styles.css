@@ -27,16 +27,36 @@ p {
 
 img {
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    align-items: center;
 }
 
 /* Logo*/
+
+header {
+    border-bottom: 1px solid #ececec;
+    background-color: #fff;
+    padding: 25px 0;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 .navigation {
     background: var(--white);
@@ -47,12 +67,11 @@ img {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.19em;
     letter-spacing: 0.03em;
     text-transform: capitalize;
-    margin-bottom: 20px;
     text-decoration-line: none;
-    padding-right: 93px;
+    margin-right: 93px;
     }
 
 .navigation-logo-web {
@@ -93,7 +112,7 @@ img {
     color: var(--blue);
 }
 
-/*Contact*/
+/*-------Contact---------*/
 
 .contakt-link.tel {
     margin-left: 50px;
@@ -119,42 +138,38 @@ img {
 }
 
 
-/*Fist section html */
+/*-------Fist section html----- */
 
 .button-title {
     background: #2F303A; 
+    padding: 200px 0px;
+    text-align: center;
 }
 .title {
-    font-family: 'Roboto';
-    align-items: center; 
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.36em;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
+    max-width: 696px;
+    margin: 0 auto 30px;
 }
 
 .button1 {
-    position: absolute;
-    font-family: 'Roboto';
-    width: 117px;
-    height: 30px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
-    padding: 10px 41px;
-    border: 1px solid;
-   
-    display: flex;
+    line-height: 1.87em;
+    padding: 10px 42px;
+    border: 0px;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
     border-radius: 4px;
-    margin-left: 700px;
-    margin-right: 700px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+
 }
 
 .button1:hover {
@@ -170,19 +185,33 @@ img {
     display: flex;
 }
 
-/*Button portfolio*/
+/*-------Button portfolio-------*/
+
+.portfolio {
+    padding: 94px 0;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    padding-bottom: 50px;
+}
 
 .button {
-    position: absolute;
-    width: 121px;
-    height: 38px;
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 16px;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    border: 0px;
+    padding: 6px 22px;
+    border-radius: 4px;
 }
 
 .button:hover {
@@ -194,9 +223,18 @@ img {
     border-radius: 4px;
 }
 
-/*Lorem Ipsum*/
+/*------Do wszystkich UL----------*/
+
+.main-menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*---------Lorem Ipsum-------------*/
 
 .manu {
+    width: 270px;
+    height: 16px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.15;
@@ -204,26 +242,72 @@ img {
     text-transform: uppercase;
     color: #212121;
     list-style-type: none;
+    padding-top: 94px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .submenu {
+    max-width: 270px;
+    height: 75px;
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
     color: #757575;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    }
+
+.submenu:not(:last-child) {
+    padding-right: 30px;
 }
 
-/*main page portfolio*/
-
-.main-menu {
-    list-style-type: none;
+.list2 {
+    margin-left: -30px;
+    margin-bottom: 94px;
 }
+
+/*-----main page portfolio------*/
+
+.type {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.main-menu-type-list {
+    background-color: var(--white);
+    margin-left: -30px;
+    margin-bottom: -30px;
+    min-width: 370px;
+}
+
+.main-menu-type-list-image {
+    display: block;
+}
+
+.main-menu-type-list figcaption {
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+}
+
+.main-menu-type-list1 {
+    background-color: #fff;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    max-width: 370px;
+}
+
 .manu1 {
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    padding: 20px 24px 4px 24px;
 }
 
 .submanu1 {
@@ -231,31 +315,47 @@ img {
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: #757575;
+    padding: 0px 24px 20px 24px;
 }
+
 
 /*Czym się zajmujemy*/
 
 .title2 {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 35px;
+    line-height: 1.2em;
     text-align: center;
     letter-spacing: 0.03em;
     list-style: none;
     color: #212121;
+    margin-bottom: 50px;
 }
 
-/*Nasz zespół*/
-
-.title3,
 .picture {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+       /*========Nasz zespół=======*/
+
+.title3 {
+    margin-bottom: 50px;
+}
+
+.title3 {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 35px;
+    line-height: 1.2em;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
     list-style-type: none;
+}
+
+.team {
+    margin-left: -30px;
+    margin-bottom: -30px;
 }
 
 .name {
@@ -278,13 +378,28 @@ img {
     color: #757575;
 }
 
+.picture-team {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.picture-team-item {
+    min-width: 270px;
+    display: block;
+
+}
 
 /*footer*/
 
 .footer {
-    background-color: #000;
+    background-color: #2f303a;
     color: #fff;
     padding: 60px 0;
+    font-style: normal;
 }
 
 .footer-logo {
@@ -296,6 +411,7 @@ img {
     text-transform: capitalize;
     margin-bottom: 20px;
     text-decoration-line: none;
+    display: inline-block;
 }
 
 .footer-logo-web {
@@ -306,11 +422,15 @@ img {
 }
 
 .footer-text {
+    font-family: 'Roboto';
     font-size: 14px;
     line-height: 24px;
     list-style-type: none;
     color: #fff;
     margin-bottom: 9px;
+    display: block;
+    font-style: normal;
+    letter-spacing: 0.03em;
 }
 
 .footer-text:last-child {

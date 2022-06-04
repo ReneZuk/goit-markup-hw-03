@@ -22,8 +22,9 @@
   <body>
     <header>
       <div class="container">
-  <!--Logo-->
-      <nav class="navigation">
+                     <!--------------Logo---------->
+        <div class="container-menu">
+          <div class="container-menu-list">
         <a
           class="navigation-logo"
           href="https://renezuk.github.io/goit-markup-hw-02/">
@@ -35,7 +36,8 @@
           <li><a class="navigation-link" href="./portfolio.html">Porfolio</a></li>
           <li><a class="navigation-link" href="Kontakt">Kontakt</a></li>
         </ul>
-      
+     </div>
+      <nav class="navigation">
  <!--Contact-->
       <ul class="main-menu list">
         <li>
@@ -44,20 +46,31 @@
         <a class="contakt-link tel" href="tel:+48111111111">+48 111 111 111</a></li>
       </ul>
       </nav>
+       </div>
       </div>
     </header>
 
     <main>
         <!--First section-->
-      <div class="container">
       <section class="button-title">
+      <div class="container">
         <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA NASZEGO BIZNESU</h1>
         <button class="button1" type="button">Zamów usługę</button>
       </section>
       </div>
       <section>
           <!--Lorem Ipsum text-->
-        <ul class="main-menu">
+          <div class="container">
+        <ul class="main-menu list list2">
+          <li>
+            <h4 class="manu">LOREM IPSUM</h4>
+            <p class="submenu">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              voluptates libero veniam nesciunt optio reprehenderit porro
+              excepturi doloremque labore, modi quibusdam nisi dolorem rem quam.
+              Quo sint iure ipsum ullam!
+            </p>
+          </li>
           <li>
             <h4 class="manu">LOREM IPSUM</h4>
             <p class="submenu">
@@ -86,6 +99,7 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
 
       <!--Czym się zajmujemy-->
@@ -93,7 +107,7 @@
       <section>
       <div class="container">
         <h2 class="title2">Czym się zajmujemy</h2>
-        <ul class="main-menu">
+        <ul class="main-menu list2">
           <li class="picture">
             <img
               src="images/image1.jpg"
@@ -121,54 +135,59 @@
         </ul>
       </div>
       </section>
-      <section>
-      <div class="container">
+                      <!--Nasz Zespół-->
+      <section >
+        <div class="container">   
         <h2 class="title3">Nasz zespół</h2>
-        <ul class="main-menu">
-          <li class="picture">
-            <img
+         <ul class="main-menu team">
+          <li class="picture-team">
+            <img class="picture-team-item"
               src="images/image4.jpg"
               alt="mężczyna uśmiechnięty"
               width="270"
-              height="260"
-            />
+              height="260"/>
             <h4 class="name">John Doe</h4>
             <p class="post">Product Designer</p>
-          </li>
-          <li class="picture">
-            <img
+        </li>
+          <li class="picture-team">
+            <img class="picture-team-item"
               src="images/image5.jpg"
               alt="kobieta uśmiechnięta"
               width="270"
-              height="260"
-            />
+              height="260"/>
             <h4 class="name">John Doe</h4>
             <p class="post">Fronted Developer</p>
           </li>
-          <li class="picture">
-            <img
+          <li class="picture-team">
+            <img class="picture-team-item"
               src="images/image6.jpg"
               alt="młody mężczyzna"
               width="270"
-              height="260"
-            />
+              height="260"/>
             <h4 class="name">John Doe</h4>
             <p class="post">Marketing</p>
           </li>
-          <li class="picture">
-            <img
+          <li class="picture-team">
+            <figure class="team-card">
+            <img class="picture-team-item"
               src="images/image7.jpg"
               alt="mężczyzna z lekkim uśmiechem"
               width="270"
-              height="260"
-            />
+              height="260"/>
+              <figcaption>
             <h4 class="name">John Doe</h4>
             <p class="post">UI Designer</p>
+            </figcaption>
+            </figure>
           </li>
         </ul>
       </div>
+      </figcaption>
       </section>
     </main>
+
+    <!-----------------Footer------------>
+
     <footer class="footer">
     <div class="container">
         <!--Logo-->
