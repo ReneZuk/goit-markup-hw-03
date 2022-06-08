@@ -377,6 +377,8 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    padding-top: 30px;
+    margin-bottom: 10px;
 }
 
 .post {
@@ -387,6 +389,7 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-bottom: 30px;
 }
 
 .picture-team {
@@ -403,9 +406,6 @@ header {
     display: block;
 
 }
-
-
-
 
 /*footer*/
 
@@ -453,10 +453,10 @@ margin-bottom: 0;
 
 .footer-link {
     text-decoration: none;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-link:hover,
 .footer-link:focus {
-    color:  grey;
+    color: rgba(255, 255, 255, 1);
 }
